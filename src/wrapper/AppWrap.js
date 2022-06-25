@@ -14,6 +14,7 @@ const AppWrap = (Component, idName, classNames) =>
             <p className="p-text">All rights reserved</p>
           </div>
         </div>
+
         <NavigationDots active={idName} />
       </div>
     );
