@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { AppWrap } from "../../wrapper";
 import { images } from "../../constants";
 import "./Header.scss";
+import Typed from "react-typed";
 
 const scaleVariants = {
   whileInView: {
@@ -33,8 +34,23 @@ const Header = () => (
         </div>
 
         <div className="tag-cmp app__flex">
-          <p className="p-text">Web Developer</p>
-          <p className="p-text">Freelancer</p>
+          {/* <p className="p-text">Web Developer</p> */}
+          {/* <p className="p-text">Freelancer</p> */}
+          <p className="p-text">
+            <Typed
+              strings={[
+                "Software Engineer",
+                "Back-end Developer",
+                "Front-end Developer",
+                "Full-stack Developer",
+              ]}
+              typeSpeed={40}
+              backSpeed={50}
+              className="typed-header"
+              style={{ color: "blue", fontSize: "20px" }}
+              loop
+            />
+          </p>
         </div>
       </div>
     </motion.div>
